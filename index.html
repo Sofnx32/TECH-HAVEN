@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECH HAVEN</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@1&family=Vidaloka&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-links">
+            <a href="soporte.html">Soporte Técnico</a>
+            <a href="contacto.html">Contactos</a>
+            <a href="somos.html">Quiénes Somos</a>
+            <a href="blog.html">Blogs</a>
+            <a href="#">Cómo Comprar</a>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com"><img src="/assets/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com"><img src="/assets/instagram.png" alt="Instagram"></a>
+            <a href="https://www.tiktok.com/upload?lang=es"><img src="/assets/tiktok.png" alt="TikTok"></a>
+        </div>
+
+        <div class="whatsapp-container">
+            <a href="https://wa.me/+51901896678?text=Hola,%20me%20gustaría%20hacer%20una%20consulta." target="_blank" class="whatsapp-float">
+                <img src="/assets/icons/whassat.png" alt="WhatsApp" class="whatsapp-icon">
+            </a>
+        </div>
+
+        <div class="captcha-container">
+            <div class="g-recaptcha" data-sitekey="your-site-key"></div>
+        </div>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="/assets/logo.png" alt="Logo"></a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar productos">
+            <button>Buscar</button>
+        </div>
+        <button class="menu-toggle" aria-label="Abrir menú">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <div class="header-buttons">
+            <a href="productos.html" class="green-button">Ver Productos</a>
+            <a href="ofertas.html" class="red-button">Ofertas</a>
+            <a href="login.html"><img src="/assets/usuario.png" alt="usuario" class="icon"></a>
+            <a href="carrito.html"><img src="/assets/carritodecompras.png" alt="Carrito" class="icon"></a>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul class="nav-links">
+            <li><a href="#" class="active">Categorías</a></li>
+            <li class="dropdown">
+                <a href="productos/celulares.html">Celulares</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">OPPO</a></li>
+                    <li><a href="#">SAMSUNG</a></li>
+                    <li><a href="#">HUAWEI</a></li>
+                    <li><a href="#">XIAOMI</a></li>
+                    <li><a href="#">APPLE</a></li>
+                    <li><a href="#">MOTOROLA</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Computadoras</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Laptops</a></li>
+                    <li><a href="#">PCs de Escritorio</a></li>
+                    <li><a href="#">Componentes</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Impresoras</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Multifuncionales</a></li>
+                    <li><a href="#">Laser</a></li>
+                    <li><a href="#">Inyección</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Televisores</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Smart TV</a></li>
+                    <li><a href="#">LED</a></li>
+                    <li><a href="#">OLED</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="banner">
+        <img src="/assets/banner/banner 1.jpg" alt="Banner 1" class="active">
+        <img src="/assets/banner/banner 2.jpg" alt="Banner 2" class="active">
+        <img src="/assets/banner/banner3.png" alt="Banner 3" class="active">
+        <div class="banner-controls">
+            <button class="control-button" id="prev">❮</button>
+            <button class="control-button" id="next">❯</button>
+        </div>
+        <div class="indicators">
+            <span class="indicator active" data-index="0"></span>
+            <span class="indicator" data-index="1"></span>
+            <span class="indicator" data-index="2"></span>
+        </div>
+    </section>
+
+    <section class="categorias">
+        <div class="carousel">
+            <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+            <div class="categorias-container">
+                <div class="categoria">
+                    <img src="/assets/computadoras/computadora.png" alt="Computadoras" class="com4">
+                    <h3>Computadoras</h3>
+                </div>
+                <div class="categoria">
+                    <img src="/assets/televisor.png" alt="Televisores">
+                    <h3>Televisores</h3>
+                </div>
+                <div class="categoria">
+                    <img src="/assets/accesorio.png" alt="Accesorios">
+                    <h3>Accesorios</h3>
+                </div>
+                <div class="categoria">
+                    <img src="/assets/celulares/celular.png" alt="Celulares">
+                    <h3>Celulares</h3>
+                </div>
+                <div class="categoria">
+                    <img src="/assets/consola.png" alt="Consolas">
+                    <h3>Consolas</h3>
+                </div>
+            </div>
+            <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="productos">
+        <h2 class="productos-titulo">Celulares</h2>
+        <h3 class="productos-subtitulo">Las mejores calidades</h3>
+        <div class="productos-banner">
+            <img src="/assets/celulares/banner11.jpg" alt="Celulares">
+        </div>
+        <div class="productos-container">
+            <div class="producto">
+                <img src="/assets/celulares/iphone.png" alt="iPhone">
+                <h3>APPLE iPHONE 13 PRO 256GB AZUL</h3>
+                <p class="precio">S/ 2,170.00</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="/assets/celulares/samsung.png" alt="Samsung">
+                <h3>SAMSUNG GALAXY S22 ULTRA 128GB</h3>
+                <p class="precio">S/ 1,090.00</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="/assets/celulares/xiaomi.png" alt="Xiaomi">
+                <h3>XIAOMI REDMI NOTE 11 128GB AZUL</h3>
+                <p class="precio">S/ 599.00</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="productos">
+        <h2 class="productos-titulo">Impresoras</h2>
+        <h3 class="productos-subtitulo">Lo mejor en tintas</h3>
+        <div class="productos-banner">
+            <img src="/assets/impresora/bannerimpresora.png" alt="Impresora Banner">
+        </div>
+        <div class="productos-container">
+            <div class="producto">
+                <img src="/assets/impresora/impresora 1.jpg" alt="Epson" class="impresora">
+                <h3>Impresora Multifuncional Epson EcoTank L3150</h3>
+                <p class="precio">S/ 850.00</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="/assets/impresora/impresora 2.jpg" alt="Epson" class="impresora1">
+                <h3>Impresora Canon G4170 Pixma Multifuncional de tinta</h3>
+                <p class="precio">S/ 1200.00</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="/assets/impresora/impresora 3.png" alt="Epson" class="impresora2">
+                <h3>Impresora Multifuncional PIXMA G4110</h3>
+                <p class="precio">S/ 850.00</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="productos">
+        <h2 class="productos-titulo">TELEVISORES</h2>
+        <h3 class="productos-subtitulo">Lo MEJOR EN HD</h3>
+        <div class="productos-banner">
+            <img src="/assets/televisor/banner1.jpg" alt="Televisor Banner">
+        </div>
+        <div class="productos-container">
+            <div class="producto">
+                <img src="/assets/televisor/televisor 1.jpg" alt="hyundai" class="televisor">
+                <h3>43" LG NanoCell AI NANO80 4K Smart TV 2024</h3>
+                <p class="precio">S/ 1749.00</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="/assets/televisor/televisor 2.jpg" alt="Epson" class="televisor1">
+                <h3>INDURAMA SMART TV 43″ FHD 43TIKFCFHD INDURAMA</h3>
+                <p class="precio">S/ 950.00</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="/assets/televisor/televisor3.jpg" alt="Epson" class="televisor2">
+                <h3>Televisor SAMSUNG LED 43'' FHD Smart Tv</h3>
+                <p class="precio">S/ 1499.00</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="productos">
+        <h2 class="productos-titulo">COMPURTADORAS</h2>
+        <h3 class="productos-subtitulo">LA MEJOR EN GAMER </h3>
+        <div class="productos-banner">
+            <img src="/assets/computadoras/bannercomputadora.jpg" alt="Televisor Banner">
+        </div>
+        <div class="productos-container">
+            <div class="producto">
+                <img src="/assets/computadoras/computadora1.jpg" alt="intel" class="computadora">
+                <h3>Computadora no integrada Intel® Core™ i5 9na. Gen.</h3>
+                <p class="precio">S/ 1749.00</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="/assets/computadoras/computadora 2.jpg" alt="intel" class="computadora1">
+                <h3>Pc Computadora Completa Intel Core i5-3470 16GB 1TB HDD</h3>
+                <p class="precio">S/ 950.00</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="/assets/computadoras/computadora 3.jpg" alt="intel" class="computadora2">
+                <h3>Computadora PC Gamer 24" AMD Ryzen 5 5500 16GB 1TB+480GB Video GTX 1650 4GB</h3>
+                <p class="precio">S/ 1499.00</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="about">
+                <img src="/assets/logo.png" alt="Tech Haven Logo">
+                <p>Somos una empresa dedicada a la venta de computadoras y laptops, por mayor y menor. Además, brindamos soporte técnico de equipos informáticos.</p>
+                <div class="social-icons">
+                    <a href="#"><img src="/assets/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="/assets/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="/assets/tiktok.png" alt="TikTok"></a>
+                    <a href="#"><img src="/assets/whassat.png" alt="WhatsApp"></a>
+                </div>
+            </div>
+            <div class="security">
+                <h3>Tus compras siempre seguras</h3>
+                <p>Paga de forma segura usando tu tarjeta.</p>
+                <div class="payment-methods">
+                    <img src="/assets/visa.png" alt="Visa">
+                    <img src="/assets/mastercard.png" alt="MasterCard">
+                    <img src="/assets/icons/dinners card.png" alt="Diners Club">
+                    <img src="/assets/yape.png" alt="Yape">
+                    <img src="/assets/plin.png" alt="Plin">
+                </div>
+                <p>Este sitio está asegurado con SSL.</p>
+            </div>
+            <div class="contact">
+                <h3>Contacto</h3>
+                <p><img src="/assets/phone.png" alt="Phone"> +51 987 720 501</p>
+                <p><img src="/assets/whassat.png" alt="WhatsApp"> WhatsApp</p>
+                <p><img src="/assets/icons/correo.png" alt="Email"> <a href="mailto:info@techhaven.com">info@techhaven.com</a></p>
+                <p><img src="/assets/icons/ubicacion.png" alt="Location"> Calle La estancia, Huanchaco, Perú</p>
+            </div>
+            <div class="legal">
+                <h3>Compra Segura</h3>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Envío</a></li>
+                    <li><a href="#">Política de Garantía</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-note">&copy; 2024 Tech Haven. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
